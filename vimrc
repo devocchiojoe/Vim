@@ -45,15 +45,17 @@ NeoBundleFetch 'Shougo/neobundle.vim' "NEOBUNDLE HANDLE NEOBUNDLE
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""" COLORS
 NeoBundle 'https://github.com/altercation/solarized.git'
+NeoBundle 'chriskempson/base16-vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""" SYNTAX AND COMPILING/GIT
 NeoBundle 'vim-scripts/trailing-whitespace'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'https://github.com/vim-scripts/Tagbar.git'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""" GUIUI
-NeoBundle 'bling/vim-airline'
 NeoBundle 'airblade/vim-gitgutter'
-"NeoBundle 'edkolev/promptline.vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'https://github.com/itchyny/lightline.vim.git'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""" BIGGER SHIT
 NeoBundle 'Valloric/YouCompleteMe'
@@ -74,38 +76,37 @@ NeoBundleCheck " If there are uninstalled bundles found on startup, this will co
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""  PLUGIN SETTINGS
 "Solarized
-syntax enable
-set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
 
 
-"AirLine
-let g:airline_powerline_fonts = 1
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#whitespace#enabled = 1
-"let g:airline#extensions#hunks#enabled = 1
-"let g:airline#extensions#tagbar#enabled = 1
-"let g:airline#extensions#csv#enabled = 1
-"let g:airline#extensions#bufferline#enabled = 1
-let g:airline#extensions#syntastic#enabled = 1
-"let g:airline#extensions#eclim#enabled = 1
-"let g:airline#extensions#promptline#enabled = 1
-"let g:airline#extensions#promptline#snapshot_file = $HOME.'/.bash/themes/airline.sh'
+"Base16
+"let base16colorspace=256  " Access colors present in 256 colorspace
 
 
-"Promptline
-"let g:promptline_preset = 'full'
-"let g:promptline_preset = {
-"    \'a': [ promptline#slices#host(), promptline#slices#user(), promptline#slices#python_virtualenv() ],
-"    \'b': [ promptline#slices#cwd() ],
-"    \'c' : [ promptline#slices#vcs_branch(), '$(git rev-parse --short HEAD 2>/dev/null)' ],"
-"    \'warn' : [ promptline#slices#last_exit_code(), promptline#slices#battery() ]
-"}
+"LightLine
+"let g:lightline = {
+"    \ 'colorscheme': 'wombat',
+"    \ 'component': {
+"    \   'readonly': '%{&readonly?"⭤":""}',
+"    \ }
+"\ }
+
 
 "TagBar
 nmap <F8> :TagbarToggle<CR>
 autocmd VimEnter * nested :call tagbar#autoopen(1) "opens on supported file types
+
+
+"Indent Guides
+set ts=4 sw=4 et
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+let g:indent_guides_enable_on_vim_startup = 1
+
+
+set background=dark
+colorscheme solarized
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Filetype specifics/setting fxs

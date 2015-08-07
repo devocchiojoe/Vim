@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/keurig
+~MSle0~/skip
 
 # Last Substitute Search Pattern:
 ~MSle0&^" \a
@@ -17,12 +17,23 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
 :q
 :w
+:q!
+:NeoBundleClean
+:wq
+:so %
+:NeoBundleInstall
+:syntax off
+:syntax enable
+:s
+:syntax on
+:ig
+:source %
+:%source
+:zo
 :Wq
 :j
-:q!
 :q1
 :Q
 :split spiders/keurig/discovery.py
@@ -31,7 +42,6 @@ $
 :NeoBundle --help
 :NeoBundle help
 :NeoBundleLoad
-:NeoBundleClean
 :jjjjj
 :Neo
 :W
@@ -49,7 +59,6 @@ $
 :split spiders/burberry/discovery.py
 :!
 :PyflakesUpdate
-:s
 :e
 :split spiders/papa_murphy.py
 :split spiders/sallybeauty/cosmoprofbeauty.py
@@ -58,17 +67,12 @@ $
 :split spiders/location_base.py
 :split models.py
 :split spiders/sallybeauty/intersalon.py
-:split ../../../../simplesystem/src/django-simpleapp/simpleapp/spiders/vesselfinder.py
-:split spiders/sallybeauty/sallybeautymx.py
-:jjj
-:split ../simplesystem/collectionproject/development.py
-:wqq
-:qw
-:split spiders/westernunion.py
-:split spiders/taleo.py
-:split spiders/base.py
 
 # Search String History (newest to oldest):
+?/skip
+?/hello
+?/stac
+? \<3MRHPTC2IxjN2sUIHttgyf\>
 ? @$
 ?/keurig
 ?/keur
@@ -115,10 +119,6 @@ $
 ?/finish
 ?/locat
 ?/location
-?/fetc
-?/starts
-?/start_strng
-?/start_string
 
 # Expression History (newest to oldest):
 
@@ -129,189 +129,385 @@ $
 
 # Registers:
 "0	LINE	0
-	                self.save_categories(link_state, category_id, categories)
-	                return
-""1	LINE	0
-	.ropeproject
+	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
+"1	LINE	0
+	NeoBundle 'amdt/vim-niji'
 "2	LINE	0
-	.netrwhist
+	NeoBundle 'https://github.com/luochen1990/rainbow.git'
 "3	LINE	0
-	repos/eclim
+	let g:indent_guides_enable_on_vim_startup = 0
 "4	LINE	0
-	autocmd FileType c,cpp,py nested :TagbarOpen
+	"colorscheme solarized
 "5	LINE	0
-	autocmd VimEnter * nested :call tagbar#autoopen(1)
+	"syntax enable
 "6	LINE	0
-	                    raise Exception ('No Cate
-"7	LINE	0
-	def view(source):
-	    f = open("break.html","w")
-	    f.write(source)
-	    f.close()
-	    os.system("break.html")
-	        
-	        
-"8	LINE	0
-	        
-"9	LINE	0
 	
+"7	LINE	0
+	
+"8	LINE	0
+	set background=dark
+	
+"9	LINE	0
+	colorscheme base16-default
 "a	CHAR	0
 	1i 1ji			prevE€kbious_total = 2mxkllllllllllllllllllji if current_total < preve€kbou€kb€kbious_total €kb:parse_€kb_batch.ste€kb€kbet_batch_status('BAD'):wji				retu€kburn
 "j	CHAR	0
 	j
 "k	CHAR	0
 	kkkk
-"-	CHAR	0
-	k
+""-	CHAR	0
+	"
 
 # File marks:
 'F  297  27  ~/Documents/Work/Projects/simplesystem/src/django-simpleapp/simpleapp/spiders/vesselfinder.py
-'0  2  0  ~/.vim/.gitignore
-'1  3700  1  ~/.vim/viminfo
-'2  1  0  ~/.vim/vim
-'3  1  0  ~/.vim/.netrwhist
-'4  18  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
-'5  27  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
-'6  78  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
-'7  1  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
-'8  120  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
-'9  2  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
+'0  71  0  ~/.vim/vimrc
+'1  4  0  ~/hello.py
+'2  46  0  ~/.vim/vimrc
+'3  1  0  ~/.vim/vimrc
+'4  59  0  ~/.vim/vimrc
+'5  1  0  ~/.vim/vim
+'6  78  0  ~/.vim/vimrc
+'7  60  0  ~/.vim/vimrc
+'8  2  0  ~/.vim/vimrc
+'9  58  0  ~/.vim/vimrc
 
 # Jumplist (newest first):
--'  2  0  ~/.vim/.gitignore
--'  3  0  ~/.vim/.gitignore
--'  1  0  ~/.vim/.gitignore
--'  3700  1  ~/.vim/viminfo
--'  2  0  ~/.vim/viminfo
--'  1  0  ~/.vim/viminfo
--'  1  0  ~/.vim/vim
--'  1  0  ~/.vim/.netrwhist
--'  18  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  15  4  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  29  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  1  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  27  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  41  4  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  55  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  78  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  75  3  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  81  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  91  4  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  105  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  120  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  127  3  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  131  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  2  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  143  4  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  157  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  60  0  ~/.vim/vimrc
--'  1  0  ~/__Tagbar__
--'  9  0  ~/__Tagbar__
--'  1  0  ~/.vim/vimrc
--'  59  0  ~/.vim/vimrc
--'  13  4  ~/__Tagbar__
--'  16  0  ~/__Tagbar__
--'  67  0  ~/.vim/vimrc
--'  1  0  ~/hel.py
--'  111  0  ~/.vim/vimrc
--'  20  0  ~/__Tagbar__
--'  21  0  ~/__Tagbar__
--'  22  0  ~/__Tagbar__
--'  2  0  ~/.vim/vimrc
--'  1  0  ~/hell.py
--'  51  32  ~/.vim/vimrc
--'  11  0  ~/.vim/vimrc
--'  81  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/homeimprovement/homedepot.py
--'  178  3  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  186  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  45  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/homeimprovement/homedepot.py
--'  54  4  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/homeimprovement/homedepot.py
--'  23  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/homeimprovement/homedepot.py
--'  1  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/homeimprovement/homedepot.py
--'  139  16  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  10  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  23  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/keurig.py
--'  227  4  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  229  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
--'  13  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/keurig.py
--'  5  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/keurig.py
--'  7  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/keurig.py
--'  47  0  ~/.vim/vimrc
+-'  71  0  ~/.vim/vimrc
 -'  6  4  ~/.vim/__Tagbar__
 -'  9  0  ~/.vim/__Tagbar__
--'  88  0  ~/.vim/vimrc
+-'  1  0  ~/.vim/vimrc
+-'  4  0  ~/hello.py
+-'  1  0  ~/hello.py
+-'  46  0  ~/.vim/vimrc
 -'  15  0  ~/.vim/__Tagbar__
--'  77  0  ~/.vim/vimrc
+-'  22  0  ~/.vim/__Tagbar__
+-'  59  0  ~/.vim/vimrc
+-'  26  4  ~/.vim/__Tagbar__
+-'  29  0  ~/.vim/__Tagbar__
+-'  1  0  ~/.vim/vim
+-'  78  0  ~/.vim/vimrc
+-'  35  0  ~/.vim/__Tagbar__
+-'  60  0  ~/.vim/vimrc
+-'  42  0  ~/.vim/__Tagbar__
+-'  49  0  ~/.vim/__Tagbar__
+-'  2  0  ~/.vim/vimrc
+-'  56  0  ~/.vim/__Tagbar__
+-'  58  0  ~/.vim/vimrc
+-'  60  4  ~/.vim/__Tagbar__
+-'  63  0  ~/.vim/__Tagbar__
+-'  233  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
+-'  25  3  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  29  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  1  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
+-'  96  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
+-'  48  3  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  51  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  69  0  ~/.vim/__Tagbar__
+-'  104  0  ~/.vim/vimrc
+-'  70  0  ~/.vim/__Tagbar__
+-'  76  0  ~/.vim/__Tagbar__
+-'  106  0  ~/.vim/vimrc
+-'  81  0  ~/.vim/__Tagbar__
 -'  79  0  ~/.vim/vimrc
--'  65  0  ~/.vim/vimrc
--'  3  0  ~/.vim/vimrc
--'  190  8  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/keurig.py
--'  21  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/keurig.py
--'  75  30  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  90  59  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  71  45  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  63  13  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  228  8  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  58  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  74  8  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  230  8  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  25  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  7  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
--'  68  0  ~/.vim/vimrc
--'  26  4  ~/__Tagbar__
--'  29  0  ~/__Tagbar__
+-'  83  4  ~/.vim/__Tagbar__
+-'  86  0  ~/.vim/__Tagbar__
+-'  103  0  ~/.vim/vimrc
+-'  91  0  ~/.vim/__Tagbar__
+-'  80  0  ~/.vim/vimrc
+-'  97  0  ~/.vim/__Tagbar__
+-'  110  0  ~/.vim/vimrc
+-'  100  0  ~/.vim/__Tagbar__
+-'  101  0  ~/.vim/__Tagbar__
+-'  104  0  ~/.vim/__Tagbar__
+-'  105  0  ~/.vim/__Tagbar__
+-'  108  0  ~/.vim/vimrc
+-'  109  0  ~/.vim/__Tagbar__
+-'  114  0  ~/.vim/vimrc
+-'  112  4  ~/.vim/__Tagbar__
+-'  115  0  ~/.vim/__Tagbar__
+-'  53  0  ~/.vim/vimrc
+-'  122  0  ~/.vim/__Tagbar__
+-'  95  0  ~/.vim/vimrc
+-'  123  0  ~/.vim/__Tagbar__
+-'  129  0  ~/.vim/__Tagbar__
+-'  62  0  ~/.vim/vimrc
+-'  134  0  ~/.vim/__Tagbar__
+-'  138  4  ~/.vim/__Tagbar__
+-'  141  0  ~/.vim/__Tagbar__
+-'  143  4  ~/.vim/__Tagbar__
+-'  146  0  ~/.vim/__Tagbar__
+-'  148  0  ~/.vim/__Tagbar__
+-'  83  0  ~/.vim/vimrc
+-'  149  0  ~/.vim/__Tagbar__
+-'  155  0  ~/.vim/__Tagbar__
+-'  72  0  ~/.vim/vimrc
+-'  158  0  ~/.vim/__Tagbar__
+-'  162  4  ~/.vim/__Tagbar__
+-'  165  0  ~/.vim/__Tagbar__
+-'  171  0  ~/.vim/__Tagbar__
+-'  66  0  ~/.vim/vimrc
+-'  173  4  ~/.vim/__Tagbar__
+-'  176  0  ~/.vim/__Tagbar__
 -'  4  0  ~/.vim/vimrc
--'  74  0  ~/.vim/vimrc
--'  33  0  ~/.vim/vimrc
--'  33  0  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders/keurig/details.py
--'  55  8  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders/keurig/details.py
--'  1  0  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders/keurig/details.py
--'  12  0  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders/keurig
--'  52  0  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders
--'  8  0  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders
--'  22  13  ~/.vim/vimrc
--'  121  0  ~/.vim/vimrc
--'  13  0  ~/.vim/vimrc
--'  92  0  ~/.vim/vimrc
--'  16  0  ~/.vim/vimrc
--'  34  0  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders/keurig/details.py
--'  16  3  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/__Tagbar__
--'  21  0  ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/__Tagbar__
+-'  182  0  ~/.vim/__Tagbar__
+-'  57  0  ~/.vim/vimrc
+-'  186  4  ~/.vim/__Tagbar__
+-'  189  0  ~/.vim/__Tagbar__
+-'  133  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/tasks/whitegoods_report.py
+-'  62  1  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  67  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  1  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/tasks/whitegoods_report.py
+-'  16  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
+-'  84  6  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  91  0  ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
+-'  1  0  ~/.ssh/known_hosts
+-'  5  0  ~/.ssh/id_rsa
+-'  53  0  ~/.ssh/id_rsa
+-'  12  0  ~/.ssh/id_rsa
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/.gitignore
-	"	2	0
-	.	3	0
-	+	3	0
-	+	3	0
-	+	2	0
-	+	3	0
+> ~/.vim/vimrc
+	"	71	0
+	^	98	0
+	.	98	0
+	+	65	0
+	+	66	0
+	+	67	0
+	+	63	0
+	+	64	0
+	+	65	0
+	+	66	0
+	+	67	0
+	+	61	36
+	+	62	0
+	+	61	33
+	+	58	0
+	+	57	0
+	+	58	0
+	+	57	0
+	+	57	42
+	+	57	0
+	+	58	9
+	+	58	0
+	+	79	20
+	+	79	0
+	+	45	0
+	+	58	0
+	+	56	0
+	+	58	55
+	+	94	0
+	+	93	0
+	+	80	0
+	+	79	0
+	+	79	0
+	+	79	0
+	+	93	0
+	+	86	9
+	+	87	19
+	+	92	0
+	+	91	3
+	+	90	4
+	+	89	4
+	+	88	4
+	+	92	0
+	+	91	0
+	+	90	0
+	+	89	0
+	+	88	0
+	+	87	0
+	+	81	0
+	+	48	34
+	+	49	0
+	+	48	34
+	+	79	0
+	+	78	0
+	+	78	0
+	+	82	6
+	+	84	0
+	+	85	0
+	+	84	0
+	+	85	0
+	+	84	25
+	+	84	0
+	+	78	0
+	+	83	66
+	+	80	0
+	+	76	0
+	+	78	18
+	+	54	0
+	+	78	0
+	+	8	0
+	+	15	0
+	+	83	0
+	+	84	0
+	+	108	0
+	+	78	0
+	+	107	0
+	+	108	0
+	+	78	0
+	+	108	22
+	+	105	0
+	+	100	0
+	+	101	16
+	+	103	31
+	+	108	21
+	+	110	0
+	+	109	0
+	+	110	0
+	+	79	0
+	+	79	0
+	+	80	0
+	+	102	2
+	+	103	2
+	+	79	0
+	+	80	0
+	+	100	13
+	+	101	0
+	+	104	44
+	+	60	24
+	+	58	0
+	+	85	0
+	+	60	0
+	+	59	0
+	+	98	0
 
-> ~/.vim/viminfo
-	"	3700	1
+> ~/.vim/__Tagbar__
+	"	6	4
+	.	9	0
+	+	200	0
+	+	200	0
+	+	200	0
+	+	200	0
+	+	194	0
+	+	194	0
+	+	189	0
+	+	189	0
+	+	189	0
+	+	182	0
+	+	176	0
+	+	176	0
+	+	171	0
+	+	171	0
+	+	171	0
+	+	165	0
+	+	165	0
+	+	158	0
+	+	155	0
+	+	155	0
+	+	155	0
+	+	155	0
+	+	155	0
+	+	148	0
+	+	146	0
+	+	146	0
+	+	146	0
+	+	146	0
+	+	146	0
+	+	146	0
+	+	141	0
+	+	141	0
+	+	141	0
+	+	134	0
+	+	129	0
+	+	129	0
+	+	129	0
+	+	122	0
+	+	115	0
+	+	109	0
+	+	109	0
+	+	105	0
+	+	105	0
+	+	101	0
+	+	101	0
+	+	97	0
+	+	97	0
+	+	91	0
+	+	91	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	81	0
+	+	81	0
+	+	81	0
+	+	76	0
+	+	76	0
+	+	76	0
+	+	69	0
+	+	63	0
+	+	63	0
+	+	56	0
+	+	49	0
+	+	42	0
+	+	35	0
+	+	29	0
+	+	29	0
+	+	22	0
+	+	15	0
+	+	9	0
+	+	9	0
+
+> ~/hello.py
+	"	4	0
+	^	4	1
+	.	4	0
+	+	4	0
 
 > ~/.vim/vim
 	"	1	0
 
-> ~/.vim/.netrwhist
-	"	1	0
-
 > ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/currys_appliance.py
-	"	18	0
-	^	24	12
-	.	24	0
-	+	19	0
-	+	15	0
-	+	16	0
-	+	19	0
-	+	31	50
-	+	33	23
-	+	40	0
-	+	43	0
-	+	44	0
-	+	53	0
-	+	51	0
+	"	233	0
+	^	117	52
+	.	117	0
 	+	41	0
 	+	42	0
 	+	66	0
@@ -401,156 +597,105 @@ $
 	+	120	44
 	+	78	53
 	+	24	0
+	+	6	2
+	+	14	0
+	+	6	0
+	+	5	0
+	+	6	0
+	+	24	0
+	+	24	16
+	+	25	173
+	+	24	0
+	+	24	0
+	+	117	0
 
 > ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/__Tagbar__
-	"	15	4
+	"	25	3
 	.	29	0
-	+	264	0
-	+	264	0
-	+	264	0
-	+	246	0
-	+	246	0
-	+	246	0
-	+	246	0
-	+	246	0
-	+	246	0
-	+	246	0
-	+	246	0
-	+	246	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	229	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	186	0
-	+	157	0
-	+	131	0
-	+	105	0
-	+	81	0
-	+	81	0
-	+	81	0
-	+	55	0
+	+	347	0
+	+	347	0
+	+	347	0
+	+	329	0
+	+	329	0
+	+	329	0
+	+	329	0
+	+	329	0
+	+	329	0
+	+	329	0
+	+	329	0
+	+	329	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	312	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	269	0
+	+	240	0
+	+	214	0
+	+	188	0
+	+	164	0
+	+	164	0
+	+	164	0
+	+	138	0
+	+	112	0
+	+	91	0
+	+	91	0
+	+	91	0
+	+	91	0
+	+	91	0
+	+	91	0
+	+	67	0
+	+	67	0
+	+	67	0
+	+	51	0
+	+	29	0
+	+	29	0
+	+	29	0
+	+	29	0
 	+	29	0
 
-> ~/.vim/vimrc
-	"	60	0
-	^	59	36
-	.	59	33
-	+	82	0
-	+	73	9
-	+	80	0
-	+	78	0
-	+	80	7
-	+	102	0
-	+	94	0
-	+	93	0
-	+	71	0
-	+	54	33
-	+	54	0
-	+	53	33
-	+	55	0
+> ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/tasks/whitegoods_report.py
+	"	133	0
+	^	18	29
+	.	18	27
 	+	53	0
-	+	51	0
-	+	82	0
-	+	49	11
-	+	94	0
-	+	105	0
-	+	53	0
-	+	100	81
-	+	49	0
-	+	48	0
-	+	36	0
-	+	99	5
-	+	99	92
-	+	101	1
-	+	96	0
-	+	97	0
-	+	98	1
-	+	100	0
-	+	99	4
-	+	101	0
-	+	51	0
-	+	82	44
-	+	83	0
-	+	79	0
-	+	81	32
-	+	94	0
-	+	85	1
-	+	84	0
-	+	86	0
-	+	84	0
-	+	92	0
-	+	86	0
-	+	83	0
-	+	53	0
-	+	56	0
-	+	63	0
-	+	62	0
-	+	61	0
-	+	59	0
-	+	58	0
-	+	57	0
-	+	56	0
-	+	49	9
-	+	90	0
-	+	82	0
-	+	83	0
-	+	105	0
-	+	104	0
-	+	103	3
-	+	94	1
-	+	81	0
-	+	22	13
-	+	76	0
-	+	77	0
-	+	81	0
-	+	41	0
-	+	41	0
-	+	51	0
-	+	111	0
-	+	111	40
-	+	111	0
-	+	111	24
-	+	111	0
-	+	111	49
-	+	111	0
-	+	111	0
-	+	108	0
-	+	111	0
-	+	110	0
-	+	109	0
-	+	110	0
-	+	108	80
-	+	107	26
-	+	59	0
-	+	61	0
-	+	62	0
-	+	63	0
-	+	64	0
-	+	65	0
-	+	61	0
-	+	62	0
-	+	63	0
-	+	64	0
-	+	65	0
-	+	59	36
-	+	60	0
-	+	59	33
+	+	92	13
+	+	18	27
+
+> ~/.ssh/known_hosts
+	"	1	0
+
+> ~/.ssh/id_rsa
+	"	5	0
+
+> ~/.vim/.gitignore
+	"	2	0
+	.	3	0
+	+	3	0
+	+	3	0
+	+	2	0
+	+	3	0
+
+> ~/.vim/viminfo
+	"	3700	1
+
+> ~/.vim/.netrwhist
+	"	1	0
 
 > ~/__Tagbar__
 	"	1	0
@@ -731,16 +876,6 @@ $
 
 > /usr/local/Cellar/vim/7.4.712/share/vim/vim74/doc/help.txt
 	"	131	1
-
-> ~/.vim/__Tagbar__
-	"	6	4
-	.	9	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	9	0
-	+	9	0
 
 > ~/Documents/Work/Projects/retailsystem2/src/django-retailapp/retailapp/spiders/keurig/details.py
 	"	33	0
@@ -3467,201 +3602,3 @@ $
 
 > ~/Documents/Work/Projects/retailsystem/collectionproject/development.py
 	"	2	0
-
-> ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/base_audit.py
-	"	2	0
-
-> ~/Documents/Work/Projects/simplesystem/src/django-simpleapp/simpleapp/spiders/hubzu.py
-	"	60	0
-
-> ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/tasks/apple_report.py
-	"	274	30
-	^	41	31
-	.	41	30
-	+	42	60
-	+	45	22
-	+	46	15
-	+	47	15
-	+	48	16
-	+	49	16
-	+	52	16
-	+	53	16
-	+	54	16
-	+	57	8
-	+	59	8
-	+	60	8
-	+	62	8
-	+	63	8
-	+	64	8
-	+	65	8
-	+	66	8
-	+	67	8
-	+	68	8
-	+	69	8
-	+	70	8
-	+	71	8
-	+	72	8
-	+	73	8
-	+	75	8
-	+	76	8
-	+	77	60
-	+	78	4
-	+	79	0
-	+	80	0
-	+	84	0
-	+	125	0
-	+	362	0
-	+	380	0
-	+	367	0
-	+	42	70
-	+	49	17
-	+	54	23
-	+	50	23
-	+	51	23
-	+	52	23
-	+	53	23
-	+	54	23
-	+	63	10
-	+	62	12
-	+	61	15
-	+	60	10
-	+	59	12
-	+	66	10
-	+	69	10
-	+	70	11
-	+	73	10
-	+	76	19
-	+	77	20
-	+	75	17
-	+	42	63
-	+	43	0
-	+	150	127
-	+	112	0
-	+	9	0
-	+	14	31
-	+	15	0
-	+	14	46
-	+	15	36
-	+	20	0
-	+	30	35
-	+	31	0
-	+	30	15
-	+	38	0
-	+	42	171
-	+	145	0
-	+	146	57
-	+	5	0
-	+	6	0
-	+	4	0
-	+	150	0
-	+	150	0
-	+	149	0
-	+	150	36
-	+	149	37
-	+	150	0
-	+	41	30
-
-> ~/Documents/Work/Projects/retailsystem/src/django-retailapp/retailapp/spiders/homeimprovement/sears.py
-	"	459	16
-	^	337	0
-	.	380	0
-	+	11	50
-	+	617	35
-	+	460	12
-	+	458	23
-	+	459	22
-	+	461	31
-	+	458	22
-	+	459	45
-	+	458	39
-	+	461	39
-	+	458	0
-	+	472	15
-	+	472	44
-	+	472	44
-	+	472	0
-	+	470	29
-	+	434	70
-	+	472	0
-	+	470	55
-	+	470	29
-	+	472	0
-	+	472	0
-	+	472	29
-	+	472	0
-	+	471	0
-	+	472	0
-	+	464	0
-	+	470	0
-	+	469	71
-	+	472	0
-	+	471	55
-	+	424	15
-	+	424	0
-	+	425	0
-	+	424	0
-	+	652	0
-	+	651	0
-	+	652	0
-	+	652	0
-	+	652	0
-	+	652	0
-	+	670	0
-	+	660	53
-	+	663	30
-	+	644	0
-	+	643	52
-	+	644	0
-	+	643	51
-	+	704	0
-	+	696	0
-	+	693	0
-	+	690	0
-	+	686	0
-	+	683	18
-	+	682	0
-	+	663	49
-	+	664	0
-	+	642	0
-	+	644	0
-	+	622	0
-	+	592	0
-	+	549	0
-	+	546	0
-	+	542	0
-	+	531	0
-	+	509	0
-	+	502	16
-	+	501	0
-	+	499	0
-	+	483	0
-	+	472	0
-	+	462	0
-	+	455	0
-	+	431	0
-	+	414	0
-	+	416	0
-	+	393	0
-	+	395	0
-	+	385	0
-	+	378	0
-	+	380	0
-	+	380	0
-	+	366	0
-	+	353	0
-	+	341	0
-	+	328	0
-	+	179	0
-	+	183	0
-	+	175	18
-	+	57	18
-	+	56	0
-	+	54	0
-	+	39	18
-	+	33	0
-	+	28	0
-	+	21	0
-	+	100	25
-	+	104	0
-	+	337	0
-	+	380	0
